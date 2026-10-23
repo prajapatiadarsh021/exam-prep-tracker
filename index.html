@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrepPulse — Simple AI Exam Prep Tracker & Study Bot</title>
+    <meta name="description" content="Simple, clear AI study companion and syllabus tracker. Get daily focus plans, test yourself with quick in-chat quizzes, and track your exam countdown." />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236366F1'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>" />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div class="app-container" id="app-root">
+      <!-- Top Application Header -->
+      <div id="header-mount-point"></div>
+
+      <!-- Main Unified Workspace: Tracker + Chat Bot -->
+      <main class="main-workspace" id="main-workspace" data-mobile-active="chat">
+        <!-- 1. Left: Simple Exam Tracker & Syllabus Checklist -->
+        <div id="tracker-mount-point" class="tracker-column"></div>
+
+        <!-- 2. Right: AI Study Chat Bot Area -->
+        <div id="chatbot-mount-point" class="chatbot-column"></div>
+      </main>
+
+      <!-- Modal Overlays -->
+      <div id="modals-mount-point"></div>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
